@@ -1,12 +1,57 @@
 <div align="center">
 
 <!-- Animated Header Wave -->
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:0f0c29,50:302b63,100:24243e&amp;height=200&amp;section=header&amp;text=Otmane%20Hammadi&amp;fontSize=55&amp;fontColor=ffffff&amp;fontAlignY=38&amp;desc=Full-Stack%20Developer%20%7C%20AI%20%26%20Data%20Science&amp;descAlignY=58&amp;descSize=18&amp;animation=fadeIn" />
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A1A2B"/>
+      <stop offset="100%" stop-color="#123C55"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2E86AB" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#2E86AB" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="ribbon" width="28" height="14" patternUnits="userSpaceOnUse">
+      <path d="M0,7 L7,0 L14,7 L7,14 Z" fill="#D9A648" fill-opacity="0.55"/>
+      <path d="M14,7 L21,0 L28,7 L21,14 Z" fill="none" stroke="#D9A648" stroke-opacity="0.35" stroke-width="1"/>
+    </pattern>
+  </defs>
 
-<!-- Animated Typing SVG -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&amp;weight=600&amp;size=22&amp;pause=1000&amp;color=A78BFA&amp;center=true&amp;vCenter=true&amp;width=600&amp;lines=Passionate+Full-Stack+Developer+%F0%9F%9A%80;React+%7C+Node.js+%7C+MongoDB+Expert;AI+%26+Data+Science+Student+%F0%9F%A7%A0;Always+learning%2C+always+building+%F0%9F%94%A5" alt="Typing SVG" />
-</a>
+  <!-- background -->
+  <rect width="1200" height="300" fill="url(#bgGrad)"/>
+  <rect width="1200" height="300" fill="url(#glow)"/>
+
+  <!-- top / bottom ribbon borders -->
+  <rect x="0" y="0" width="1200" height="8" fill="url(#ribbon)"/>
+  <rect x="0" y="292" width="1200" height="8" fill="url(#ribbon)"/>
+
+  <!-- divider between emblem and text -->
+  <line x1="330" y1="60" x2="330" y2="240" stroke="#1B4B6B" stroke-width="1.5"/>
+
+  <!-- emblem: eight-point zellige star -->
+  <g transform="translate(20,0)">
+    <circle cx="150" cy="150" r="96" fill="none" stroke="#D9A648" stroke-opacity="0.4" stroke-width="1.5" stroke-dasharray="3 6">
+      <animateTransform attributeName="transform" type="rotate" from="0 150 150" to="360 150 150" dur="90s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="150" cy="150" r="80" fill="#0A1A2B" fill-opacity="0.3" stroke="#1B4B6B" stroke-width="1"/>
+    <polygon points="150.0,72.0 162.2,120.4 205.2,94.8 179.6,137.8 228.0,150.0 179.6,162.2 205.2,205.2 162.2,179.6 150.0,228.0 137.8,179.6 94.8,205.2 120.4,162.2 72.0,150.0 120.4,137.8 94.8,94.8 137.8,120.4"
+      fill="#1B4B6B" fill-opacity="0.55" stroke="#D9A648" stroke-width="2" stroke-linejoin="round"/>
+    <circle cx="150" cy="150" r="14" fill="#D9A648">
+      <animate attributeName="fill-opacity" values="0.7;1;0.7" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- text block -->
+  <text x="384" y="132" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="2" fill="#F3E9D2">OTMANE HAMMADI</text>
+  <text x="386" y="170" font-family="'Consolas', 'Courier New', monospace" font-size="21" fill="#D9A648">Full-Stack Developer · AI &amp; Data Science</text>
+
+  <rect x="386" y="188" width="150" height="3" fill="#D9A648">
+    <animate attributeName="width" values="150;210;150" dur="5s" repeatCount="indefinite"/>
+    <animate attributeName="fill-opacity" values="0.5;1;0.5" dur="5s" repeatCount="indefinite"/>
+  </rect>
+
+  <text x="386" y="222" font-family="'Segoe UI', Helvetica, Arial, sans-serif" font-size="16" fill="#8FA6B8">Fes, Morocco — building scalable, cloud-native applications</text>
+</svg>
 
 <br/>
 
